@@ -1,0 +1,335 @@
+/*GENERAL*/
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+    	 url('polices/ballpark.woff') format('woff'),
+    	 url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
+}
+body
+{
+	font-family: Arial, sans-serif;
+	background-color: rgb(233, 241, 205);
+	margin: 0;
+}
+header, form, .form__checkbox, .logo, nav, section, footer
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+section
+{
+	flex-direction: column;
+	padding: 100px 0 100px 0;
+	border-top: 1px dotted grey;
+	border-bottom: 1px dotted grey;
+}
+.container
+{
+	border: 1px grey solid;
+	border-radius: 25px;
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+/*/GENERAL*/
+/*FORM*/
+form
+{
+	position: absolute;
+	top: 0;
+	height: 30px;
+	width: 100%;
+	justify-content: right;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+form input, .form__btn
+{
+	margin: 0 5px 0 5px;
+}
+.form__btn
+{
+	color: black;
+	font-size: 0.8em;
+	padding: 1px 4px 1px 4px;
+	background-color: rgb(233, 241, 205);
+	border: 1px black solid;
+}
+.form__btn:hover
+{
+	background-color: white;
+	text-decoration: underline;
+}
+.form__checkbox
+{
+	position: absolute;
+	top: 30px;
+	color: white;
+	font-size: 0.8em;
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 1px 5px 2px 0;
+}
+/*/FORM*/
+/*LOGO*/
+.logo
+{
+	background-image: url(images/fond_logo.png);
+	padding: 12px;
+	border: 6px black double;
+	border-radius: 100%;
+	margin: 40px 0 40px 20px;
+}
+.logo img
+{
+	width: 60px;
+	height: 60px;
+	margin: 0 10px 8px 0;
+}
+.logo h1
+{
+	font-family: BallparkWeiner;
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-top: 16px;
+}
+/*/LOGO*/
+/*NAV*/
+nav
+{
+	position: absolute;
+	top: 155px;
+	right: 25px;
+	width: 28%;
+}
+nav a
+{
+    font-size: 1.2em;
+    color: black;
+}
+/*/NAV*/
+/*BANNER*/
+.banner_background
+{
+	position: relative;
+	height: 300px;
+	width: 75%;
+	max-width: 1000px;
+	background: url(images/iguanodon.png);
+	margin-bottom: 100px;
+}
+.banner_description
+{
+	position: absolute;
+	right: 0;
+	height: 300px;
+	width: 170px;
+	font-size: 1.2em;
+	text-align: center;
+	color: white;
+	border-left: 1px black solid;
+	border-radius: 0 25px 25px 0;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.banner_description a
+{
+	color: white;
+	text-decoration: none;
+}
+.banner_description a:hover
+{
+	text-decoration: underline;
+}
+.banner_description img
+{
+	position: absolute;
+	bottom: 52px;
+	right: 20px;
+}
+#main
+{
+	width: 80%;
+	height: 513px;
+}
+#a1
+{
+	width: 60%;
+	height: 255px;
+	background-image: url(images/jungle.png);
+	background-position: -8px -10px;
+}
+#a1 h2
+{
+	font-size: 1.3em;
+	margin-top: -3px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 25px;
+	padding: 2px;
+}
+#a1 p
+{
+	width: 150px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 25px;
+}
+video
+{
+	width: 100%;
+}
+#bloc_video
+{
+	align-items: center;
+	width: 35%;
+	font-size: 0.8em;
+	text-align: center;	
+	font-weight: bold;
+	padding: 25px 5px 8px 5px;
+}
+#l2
+{
+	position: relative;
+	background-image: url(images/panorama.png);
+	background-position: 0 -175px;
+	height: 225px;
+}
+table
+{
+	position: absolute;
+	right: 10px;
+	top: 47px;
+	border-collapse: collapse;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+caption
+{
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid black;
+}
+td, th
+{
+	border: 1px solid black;
+	padding: 2px 5px 2px 5px;
+}
+table a
+{
+	text-decoration: none;
+}
+table a:hover
+{
+	text-decoration: underline;
+}
+table a:visited
+{
+	color: blue;
+}
+aside
+{
+	align-items: center;
+	height: 510px;
+	width: 15%;
+}
+aside h2
+{
+	font-size: 0.75em;
+	text-align: center;
+}
+aside ul
+{
+	font-size: 0.65em;
+	margin-left: -24px;
+}
+aside ul li
+{
+	margin-bottom: 20px;
+}
+em
+{
+	font-weight: bold;
+}
+aside img
+{
+	border: 1px black solid;
+	border-radius: 25px;
+	width: 80%;
+	margin-bottom: 15px;
+}
+footer
+{
+	border-top: 1px grey solid;
+	background-color: rgb(200, 209, 166)
+}
+footer h1
+{
+	font-size: 1em;
+	text-align: center;
+}
+footer ul
+{
+	margin-left: -40px;
+}
+footer li
+{
+	margin-bottom: 5px;
+}
+footer a
+{
+	color: black;
+	text-decoration: none;
+}
+footer a:hover
+{
+	text-decoration: underline;
+}
+footer p
+{
+	margin: 25px 0 0 2px;
+}
+@media all and (max-width: 1255px)
+{
+	nav
+	{
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+		height: 100px;
+		border: none;
+		padding: 0;
+		background: none;
+		box-shadow: none;
+	}
+	nav a
+	{
+		border-radius: 15px;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding: 2px 7px 0 7px;
+	}
+	nav a:hover
+	{
+		text-decoration: none;
+		background-color: rgba(255, 255, 255, 1);
+	}
+	#banniere_fond
+	{
+		width: 80%;
+	}
+	#bloc_video
+	{
+		justify-content: space-evenly;
+	}
+	video
+	{
+		margin-bottom: 15px;
+	}
+}

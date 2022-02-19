@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--HEAD-->
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Page d'accueil</title>		
+	</head>
+<!--/HEAD-->
+<!--BODY-->
+	<body>
+<!--HEADER-->
+		<header>
+<!--FORM-->
+			<form method="post" action="traitement.php">
+				<p>
+					<input type="email" placeholder="Adresse e-mail" name="pseudo" required />
+					<input type="password" placeholder="Mot de passe" name="pseudo" required />
+					<input class="form__btn" type="submit" value="Connexion" />
+					<a class="form__btn" href="#" title="Inscrivez-vous pour bénéficier de nombreux avantages !">Inscription</a>
+					<div class="form__checkbox">
+						<input id="form__checkbox" type="checkbox" name="rester connecté" />
+						<label for="form__checkbox">Rester connecté</label>
+					</div>
+				</p>
+			</form>
+<!--/FORM-->
+<!--LOGO-->
+			<div class="logo">
+				<img src="images/oeil.png" alt="oeil_dino" />
+				<h1>Dinotopia</h1>
+			</div>
+<!--/LOGO-->
+<!--NAV-->
+			<nav>
+				<a href="#">Accueil</a>
+				<a href="#">Infos pratiques</a>
+				<a href="#">Billeterie</a>
+			</nav>
+<!--/NAV-->
+		</header>
+<!--/HEADER-->
+<!--SECTION-->
+		<section>
+<!--BANNER-->
+			<div class="container banner_background">
+				<div class="banner_description">
+				Naissance des Iguanodons : le monde entier en émoi
+				<a href="#">Lire l'article <img src="images/flecheblanchedroite.png" alt="" /></a>
+				</div>
+			</div>
+<!--/BANNER-->
+			<div class="flex--between" id="sous_section">
+				<div class="flex--column flex--between" id="main">
+					<div class="flex--between" id="l1">
+						<div class="container flex--column align--center" id="a1">
+							<h2>Le parc rouvre ses portes !</h2>
+							<p>Après une fermeture de deux ans en raison de la pandémie de COVID-19, nous sommes ravis de vous accueillir de nouveau dès le 10 janvier !</p>
+						</div>
+						<div id="bloc_video" class="container container--green flex--column flex--between">
+							<video src="images/video.mp4" controls></video>
+							Venez vous promener avec les Diplodocus !
+						</div>
+					</div>
+
+					<div id="l2" class="sous_section__bloc">
+						<table>
+							<caption>Quelques espèces du parc</caption>
+							<thead>
+								<tr>
+									<th>Espèce</th>
+									<th>Nombre</th>
+									<th>Poids moyen</th>
+									<th>Régime</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://fr.wikipedia.org/wiki/Compsognathus">Compsognathus</a></td>
+									<td>66</td>
+									<td>2 kg</td>
+									<td>Carnivore</td>
+								</tr>
+								<tr>
+									<td><a href="https://fr.wikipedia.org/wiki/Ankylosaurus">Ankylosaurus</a></td>
+									<td>13</td>
+									<td>3000 kg</td>
+									<td rowspan="2">Herbivore</td>
+								</tr>
+								<tr>
+									<td><a href="https://fr.wikipedia.org/wiki/Brachiosaurus">Brachiosaurus</a></td>
+									<td>2</td>
+									<td>40 000 kg</td>
+								</tr>
+								<tr>
+									<td><a href="https://fr.wikipedia.org/wiki/Rhamphorhynchus">Rhamphorhynchus</a></td>
+									<td>84</td>
+									<td>15 kg</td>
+									<td>Piscivore</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<aside class="flex__column flex--around sous_section__bloc">
+					<h2>Biographie d'Howard Hughes, fondateur du parc</h2>
+					<ul>
+						<li><em>21 juin 1936</em> : naissance à Londres</li>
+						<li><em>1954-1961</em> : études d'archéologie à la Sorbonne</li>
+						<li><em>17 juillet 1968</em> : découverte du Spinosaurus au Maroc</li>
+						<li><em>8 octobre 1976</em> : création du parc Dinotopia</li>
+						<li><em>17 mars 2004</em> : décès à Paris</li>
+					</ul>
+					<img src="images/howard.jpg" title="Howard Hughes" alt="Howard Hughes" />
+				</aside>
+			</div>
+		</section>
+<!--/SECTION-->
+<!--FOOTER-->			
+		<footer class="container--green flex-around">
+			<div id="partenaires">
+				<h1>Nos partenaires</h1>
+				<ul>
+					<li><a href="#">Massive Dynamic</a></li>
+					<li><a href="#">Tyrannasso</a></li>
+					<li><a href="#">Royaume du Kilimandjaro</a></li>
+				</ul>
+			</div>
+			<div id="reseaux">
+				<h1>Suivez-nous sur les réseaux sociaux</h1>
+				<p class="flex--around"><img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/vimeo.png" alt="Vimeo" /><img src="images/flickr.png" alt="Flickr" /><img src="images/rss.png" alt="RSS" /></p>
+			</div>
+			<div id="recrutement">
+				<h1>Rejoignez-nous</h1>
+				<ul>
+					<li><a href="#">Nos offres d'emploi</a></li>
+					<li><a href="#">La vie dans le parc</a></li>
+					<li><a href="#">Témoignages</a></li>
+				</ul>
+			</div>
+		</footer>
+<!--/FOOTER-->
+	</body>
+<!--/BODY-->
+</html>
