@@ -56,7 +56,7 @@ form input, .form__btn
 }
 .form__btn
 {
-	color: black;
+	color: grey;
 	font-size: 0.8em;
 	padding: 1px 4px 1px 4px;
 	background-color: rgb(233, 241, 205);
@@ -110,8 +110,8 @@ nav
 }
 nav a
 {
-    font-size: 1.2em;
-    color: black;
+    font-size: 1.3em;
+    color: grey;
 }
 /*/NAV*/
 /*BANNER*/
