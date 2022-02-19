@@ -14,7 +14,7 @@ body
 	background-color: rgb(233, 241, 205);
 	margin: 0;
 }
-header, form, .form__checkbox, .logo, nav, section, footer
+.flex
 {
 	display: flex;
 	justify-content: space-between;
@@ -23,7 +23,6 @@ header, form, .form__checkbox, .logo, nav, section, footer
 section
 {
 	flex-direction: column;
-	padding: 100px 0 100px 0;
 	border-top: 1px dotted grey;
 	border-bottom: 1px dotted grey;
 }
@@ -42,7 +41,7 @@ a:hover
 }
 /*/GENERAL*/
 /*FORM*/
-form
+.form
 {
 	position: absolute;
 	top: 0;
@@ -116,43 +115,41 @@ nav a
 }
 /*/NAV*/
 /*BANNER*/
-.banner_background
+.banner__background
 {
 	position: relative;
 	height: 300px;
 	width: 75%;
 	max-width: 1000px;
 	background: url(images/iguanodon.png);
-	margin-bottom: 100px;
+	margin: 100px 0 100px 0;
 }
-.banner_description
+.banner__description
 {
 	position: absolute;
 	right: 0;
 	height: 300px;
-	width: 170px;
-	font-size: 1.2em;
+	width: 220px;
+	flex-direction: column;
+	justify-content: space-around;
 	text-align: center;
 	color: white;
+	font-size: 1.2em;
+	background-color: rgba(255, 255, 255, 0.3);
 	border-left: 1px black solid;
 	border-radius: 0 25px 25px 0;
-	background-color: rgba(255, 255, 255, 0.3);
 }
-.banner_description a
+.banner__description a
 {
 	color: white;
-	text-decoration: none;
 }
-.banner_description a:hover
-{
-	text-decoration: underline;
-}
-.banner_description img
+.banner__description img
 {
 	position: absolute;
-	bottom: 52px;
-	right: 20px;
+	bottom: 58px;
+	right: 45px;
 }
+/*/BANNER*/
 #main
 {
 	width: 80%;

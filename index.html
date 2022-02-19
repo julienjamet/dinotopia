@@ -10,15 +10,15 @@
 <!--BODY-->
 	<body>
 <!--HEADER-->
-		<header>
+		<header class="flex">
 <!--FORM-->
-			<form method="post" action="traitement.php">
+			<form class="flex form" method="post" action="traitement.php">
 				<p>
 					<input type="email" placeholder="Adresse e-mail" name="pseudo" required />
 					<input type="password" placeholder="Mot de passe" name="pseudo" required />
 					<input class="form__btn" type="submit" value="Connexion" />
 					<a class="form__btn" href="#" title="Inscrivez-vous pour bénéficier de nombreux avantages !">Inscription</a>
-					<div class="form__checkbox">
+					<div class="flex form__checkbox">
 						<input id="form__checkbox" type="checkbox" name="rester connecté" />
 						<label for="form__checkbox">Rester connecté</label>
 					</div>
@@ -26,13 +26,13 @@
 			</form>
 <!--/FORM-->
 <!--LOGO-->
-			<div class="logo">
+			<div class="flex logo">
 				<img src="images/oeil.png" alt="oeil_dino" />
 				<h1>Dinotopia</h1>
 			</div>
 <!--/LOGO-->
 <!--NAV-->
-			<nav>
+			<nav class="flex">
 				<a href="#">Accueil</a>
 				<a href="#">Infos pratiques</a>
 				<a href="#">Billeterie</a>
@@ -41,12 +41,13 @@
 		</header>
 <!--/HEADER-->
 <!--SECTION-->
-		<section>
+		<section class="flex">
 <!--BANNER-->
-			<div class="container banner_background">
-				<div class="banner_description">
-				Naissance des Iguanodons : le monde entier en émoi
-				<a href="#">Lire l'article <img src="images/flecheblanchedroite.png" alt="" /></a>
+			<div class="container banner__background">
+				<div class="flex banner__description">
+					Naissance des Iguanodons : le monde entier en émoi
+					<a href="#">Lire l'article</a>
+					<img src="images/flecheblanchedroite.png" alt="" />
 				</div>
 			</div>
 <!--/BANNER-->
