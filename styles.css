@@ -175,7 +175,6 @@ table
 	right: 10px;
 	top: 47px;
 	border-collapse: collapse;
-	text-align: center;
 	background-color: rgba(255, 255, 255, 0.5);
 }
 caption
@@ -227,30 +226,15 @@ aside img
 }
 footer
 {
-	border-top: 1px grey solid;
-	background-color: rgb(200, 209, 166)
+	justify-content: space-around;
 }
-footer h1
-{
-	font-size: 1em;
-	text-align: center;
-}
-footer ul
-{
-	margin-left: -40px;
-}
-footer li
-{
-	margin-bottom: 5px;
-}
-footer a
-{
-	color: black;
-}	
-footer p
-{
-	margin: 25px 0 0 2px;
-}
+
+
+
+
+
+
+
 @media all and (max-width: 1255px)
 {
 	nav
