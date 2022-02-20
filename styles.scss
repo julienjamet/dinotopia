@@ -138,88 +138,63 @@ video {
 	border: 2px solid black;
 }
 /*/ACTU*/
-
-
-
-
-#l2
-{
+#l2 {
 	position: relative;
 	background-image: url(images/panorama.png);
 	background-position: 0 -175px;
 	height: 225px;
 	visibility: hidden;
 }
-table
-{
+table {
 	position: absolute;
 	right: 10px;
 	top: 47px;
 	border-collapse: collapse;
 	background-color: rgba(255, 255, 255, 0.5);
 }
-caption
-{
+caption {
 	font-weight: bold;
 	background-color: rgba(255, 255, 255, 0.5);
 	border: 1px solid black;
 }
-td, th
-{
+td, th {
 	border: 1px solid black;
 	padding: 2px 5px 2px 5px;
 }
-table a:visited
-{
+table a:visited {
 	color: blue;
 }
-aside
-{
+aside {
 	align-items: center;
 	height: 510px;
 	width: 15%;
 	visibility: hidden;
 }
-aside h2
-{
+aside h2 {
 	font-size: 0.75em;
 	text-align: center;
 }
-aside ul
-{
+aside ul {
 	font-size: 0.65em;
 	margin-left: -24px;
 }
-aside ul li
-{
+aside ul li {
 	margin-bottom: 20px;
 }
-em
-{
+em {
 	font-weight: bold;
 }
-aside img
-{
+aside img {
 	border: 1px black solid;
 	border-radius: 25px;
 	width: 80%;
 	margin-bottom: 15px;
 }
-footer
-{
+footer {
 	justify-content: space-around;
 }
-
-
-
-
-
-
-
-@media all and (max-width: 1255px)
-{
-	nav
-	{
+@media all and (max-width: 1255px) {
+	nav {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-end;
@@ -229,27 +204,22 @@ footer
 		background: none;
 		box-shadow: none;
 	}
-	nav a
-	{
+	nav a {
 		border-radius: 15px;
 		background-color: rgba(255, 255, 255, 0.5);
 		padding: 2px 7px 0 7px;
 	}
-	nav a:hover
-	{
+	nav a:hover {
 		text-decoration: none;
 		background-color: rgba(255, 255, 255, 1);
 	}
-	#banniere_fond
-	{
+	#banniere_fond {
 		width: 80%;
 	}
-	#bloc_video
-	{
+	#bloc_video {
 		justify-content: space-evenly;
 	}
-	video
-	{
+	video {
 		margin-bottom: 15px;
 	}
 }
