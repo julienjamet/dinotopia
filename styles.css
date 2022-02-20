@@ -11,8 +11,18 @@
 body
 {
 	font-family: Arial, sans-serif;
-	background-color: rgb(233, 241, 205);
+	color: grey;
+	text-align: center;
 	margin: 0;
+}
+.green
+{
+	background-color: rgb(233, 241, 205);
+}
+.border
+{
+	border-top: 1px dotted grey;
+	border-bottom: 1px dotted grey;
 }
 .flex
 {
@@ -20,23 +30,19 @@ body
 	justify-content: space-between;
 	align-items: center;
 }
-section
+.column
 {
 	flex-direction: column;
-	border-top: 1px dotted grey;
-	border-bottom: 1px dotted grey;
+	justify-content: space-around;
 }
-.container
+a, .form__btn
 {
-	border: 1px grey solid;
-	border-radius: 25px;
-}
-a
-{
+	color: grey;
 	text-decoration: none;
 }
-a:hover
+a:hover, .form__btn:hover
 {
+	color: black;
 	text-decoration: underline;
 }
 /*/GENERAL*/
@@ -50,22 +56,20 @@ a:hover
 	justify-content: right;
 	background-color: rgba(0, 0, 0, 0.3);
 }
-form input, .form__btn
+form input, form a
 {
 	margin: 0 5px 0 5px;
 }
-.form__btn
+.form__btn, form a
 {
-	color: grey;
 	font-size: 0.8em;
 	padding: 1px 4px 1px 4px;
-	background-color: rgb(233, 241, 205);
 	border: 1px black solid;
 }
-.form__btn:hover
+.form__btn:hover, form a:hover
 {
 	background-color: white;
-	text-decoration: underline;
+	cursor: pointer;
 }
 .form__checkbox
 {
@@ -80,6 +84,7 @@ form input, .form__btn
 /*LOGO*/
 .logo
 {
+	color: black;
 	background-image: url(images/fond_logo.png);
 	padding: 12px;
 	border: 6px black double;
@@ -107,11 +112,7 @@ nav
 	top: 155px;
 	right: 25px;
 	width: 28%;
-}
-nav a
-{
-    font-size: 1.3em;
-    color: grey;
+	font-size: 1.3em;
 }
 /*/NAV*/
 /*BANNER*/
@@ -122,7 +123,8 @@ nav a
 	width: 75%;
 	max-width: 1000px;
 	background: url(images/iguanodon.png);
-	margin: 100px 0 100px 0;
+	border-radius: 25px;
+	margin: 130px 0 130px 0;
 }
 .banner__description
 {
@@ -130,9 +132,6 @@ nav a
 	right: 0;
 	height: 300px;
 	width: 220px;
-	flex-direction: column;
-	justify-content: space-around;
-	text-align: center;
 	color: white;
 	font-size: 1.2em;
 	background-color: rgba(255, 255, 255, 0.3);
@@ -150,54 +149,25 @@ nav a
 	right: 45px;
 }
 /*/BANNER*/
-#main
+/*ACTU*/
+.actu
 {
-	width: 80%;
-	height: 513px;
-}
-#a1
-{
-	width: 60%;
-	height: 255px;
-	background-image: url(images/jungle.png);
-	background-position: -8px -10px;
-}
-#a1 h2
-{
-	font-size: 1.3em;
-	margin-top: -3px;
-	text-align: center;
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 25px;
-	padding: 2px;
-}
-#a1 p
-{
-	width: 150px;
-	font-weight: bold;
-	text-align: center;
-	background-color: rgba(255, 255, 255, 0.5);
-	border-radius: 25px;
+	height: 350px;
+	width: 100%;
 }
 video
 {
-	width: 100%;
+	width: 20%;
+	border: 2px solid black;
 }
-#bloc_video
-{
-	align-items: center;
-	width: 35%;
-	font-size: 0.8em;
-	text-align: center;	
-	font-weight: bold;
-	padding: 25px 5px 8px 5px;
-}
+/*/ACTU*/
 #l2
 {
 	position: relative;
 	background-image: url(images/panorama.png);
 	background-position: 0 -175px;
 	height: 225px;
+	visibility: hidden;
 }
 table
 {
@@ -219,14 +189,6 @@ td, th
 	border: 1px solid black;
 	padding: 2px 5px 2px 5px;
 }
-table a
-{
-	text-decoration: none;
-}
-table a:hover
-{
-	text-decoration: underline;
-}
 table a:visited
 {
 	color: blue;
@@ -236,6 +198,7 @@ aside
 	align-items: center;
 	height: 510px;
 	width: 15%;
+	visibility: hidden;
 }
 aside h2
 {
@@ -283,12 +246,7 @@ footer li
 footer a
 {
 	color: black;
-	text-decoration: none;
-}
-footer a:hover
-{
-	text-decoration: underline;
-}
+}	
 footer p
 {
 	margin: 25px 0 0 2px;
