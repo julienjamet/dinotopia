@@ -10,14 +10,14 @@
 <!--BODY-->
 	<body>
 <!--HEADER-->
-		<header class="flex">
+		<header class="green flex">
 <!--FORM-->
 			<form class="flex form" method="post" action="traitement.php">
 				<p>
 					<input type="email" placeholder="Adresse e-mail" name="pseudo" required />
 					<input type="password" placeholder="Mot de passe" name="pseudo" required />
-					<input class="form__btn" type="submit" value="Connexion" />
-					<a class="form__btn" href="#" title="Inscrivez-vous pour bénéficier de nombreux avantages !">Inscription</a>
+					<input class="green form__btn" type="submit" value="Connexion" />
+					<a class="green" href="#" title="Inscrivez-vous pour bénéficier de nombreux avantages !">Inscription</a>
 					<div class="flex form__checkbox">
 						<input id="form__checkbox" type="checkbox" name="rester connecté" />
 						<label for="form__checkbox">Rester connecté</label>
@@ -41,30 +41,35 @@
 		</header>
 <!--/HEADER-->
 <!--SECTION-->
-		<section class="flex">
+		<section class="border flex column">
 <!--BANNER-->
-			<div class="container banner__background">
-				<div class="flex banner__description">
+			<div class="banner__background">
+				<div class="flex column banner__description">
 					Naissance des Iguanodons : le monde entier en émoi
 					<a href="#">Lire l'article</a>
 					<img src="images/flecheblanchedroite.png" alt="" />
 				</div>
 			</div>
 <!--/BANNER-->
-			<div class="flex--between" id="sous_section">
-				<div class="flex--column flex--between" id="main">
-					<div class="flex--between" id="l1">
-						<div class="container flex--column align--center" id="a1">
-							<h2>Le parc rouvre ses portes !</h2>
-							<p>Après une fermeture de deux ans en raison de la pandémie de COVID-19, nous sommes ravis de vous accueillir de nouveau dès le 10 janvier !</p>
-						</div>
-						<div id="bloc_video" class="container container--green flex--column flex--between">
-							<video src="images/video.mp4" controls></video>
-							Venez vous promener avec les Diplodocus !
-						</div>
-					</div>
+<!--ACTU-->
+			<div class="green border flex column actu">
+				<h1>Le parc rouvre ses portes !</h1>
+				Après une fermeture de deux ans en raison de la pandémie de COVID-19, nous sommes ravis de vous accueillir de nouveau dès le 10 mars 2022 !
+				<video src="images/video.mp4" controls></video>
+				Venez vous promener avec les Diplodocus !
+			</div>
+<!--/ACTU-->
+					
 
-					<div id="l2" class="sous_section__bloc">
+
+
+
+
+
+
+
+
+<div id="l2" class="sous_section__bloc">
 						<table>
 							<caption>Quelques espèces du parc</caption>
 							<thead>
@@ -119,7 +124,7 @@
 		</section>
 <!--/SECTION-->
 <!--FOOTER-->			
-		<footer class="container--green flex-around">
+		<footer class="flex">
 			<div id="partenaires">
 				<h1>Nos partenaires</h1>
 				<ul>
