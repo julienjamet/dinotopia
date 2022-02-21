@@ -24,48 +24,48 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-.column {
-	flex-direction: column;
-	justify-content: space-around;
+	&--column {
+		flex-direction: column;
+		justify-content: space-around;
+	}
 }
 a, .form__btn {
 	color: grey;
 	text-decoration: none;
-}
-a:hover, .form__btn:hover {
-	color: black;
-	text-decoration: underline;
+	&:hover {
+		color: black;
+		text-decoration: underline;
+	}
 }
 /*/GENERAL*/
 /*FORM*/
-.form {
+form {
 	position: absolute;
 	top: 0;
 	height: 30px;
 	width: 100%;
 	justify-content: right;
 	background-color: rgba(0, 0, 0, 0.3);
-}
-form input, form a {
-	margin: 0 5px 0 5px;
-}
-.form__btn, form a {
-	font-size: 0.8em;
-	padding: 1px 4px 1px 4px;
-	border: 1px black solid;
-}
-.form__btn:hover, form a:hover {
-	background-color: white;
-	cursor: pointer;
-}
-.form__checkbox {
-	position: absolute;
-	top: 30px;
-	color: white;
-	font-size: 0.8em;
-	background-color: rgba(0, 0, 0, 0.3);
-	padding: 1px 5px 2px 0;
+	input, a {
+		margin: 0 5px 0 5px;
+	}
+	&__btn, a {
+		font-size: 0.8em;
+		padding: 1px 4px 1px 4px;
+		border: 1px black solid;
+		&:hover {
+			background-color: white;
+			cursor: pointer;
+		}
+	}
+	&__checkbox {
+		position: absolute;
+		top: 30px;
+		color: white;
+		font-size: 0.8em;
+		background-color: rgba(0, 0, 0, 0.3);
+		padding: 1px 5px 2px 0;
+	}
 }
 /*/FORM*/
 /*LOGO*/
@@ -76,17 +76,17 @@ form input, form a {
 	border: 6px black double;
 	border-radius: 100%;
 	margin: 55px 0 25px 20px;
-}
-.logo img {
-	width: 60px;
-	height: 60px;
-	margin: 0 10px 8px 0;
-}
-.logo h1 {
-	font-family: BallparkWeiner;
-	font-size: 1.3em;
-	font-weight: normal;
-	margin-top: 16px;
+	img {
+		width: 60px;
+		height: 60px;
+		margin: 0 10px 8px 0;
+	}
+	h1 {
+		font-family: BallparkWeiner;
+		font-size: 1.3em;
+		font-weight: normal;
+		margin-top: 16px;
+	}
 }
 /*/LOGO*/
 /*NAV*/
@@ -118,14 +118,14 @@ nav {
 	background-color: rgba(255, 255, 255, 0.3);
 	border-left: 1px black solid;
 	border-radius: 0 25px 25px 0;
-}
-.banner__description a {
-	color: white;
-}
-.banner__description img {
-	position: absolute;
-	bottom: 58px;
-	right: 45px;
+	a {
+		color: white;
+	}
+	img {
+		position: absolute;
+		bottom: 58px;
+		right: 45px;
+	}
 }
 /*/BANNER*/
 /*ACTU*/
