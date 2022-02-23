@@ -1,6 +1,5 @@
 /*GENERAL*/
-@font-face
-{
+@font-face {
     font-family: 'BallparkWeiner';
     src: url('polices/ballpark.eot');
     src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
@@ -8,82 +7,79 @@
     	 url('polices/ballpark.ttf') format('truetype'),
          url('polices/ballpark.svg#BallparkWeiner') format('svg');
 }
-body
-{
+body {
 	font-family: Arial, sans-serif;
 	color: grey;
 	text-align: center;
 	margin: 0;
 }
-.green
-{
+.bloc {
 	background-color: rgb(233, 241, 205);
-}
-.border
-{
 	border-top: 1px dotted grey;
 	border-bottom: 1px dotted grey;
+	margin-bottom: 130px;
 }
-.flex
-{
+.flex {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-.column
-{
+.flex--column {
 	flex-direction: column;
 	justify-content: space-around;
 }
-a, .form__btn
-{
+a, .form__btn {
 	color: grey;
 	text-decoration: none;
 }
-a:hover, .form__btn:hover
-{
+a:hover, .form__btn:hover {
 	color: black;
 	text-decoration: underline;
 }
-/*/GENERAL*/
+.article {
+	height: 350px;
+	width: 100%;
+	justify-content: space-around;
+}
+caption, h4 {
+	caption-side: bottom;
+	font-weight: normal;
+	font-style: italic;
+	margin-top: 15px;
+}
+
 /*FORM*/
-.form
-{
+.form {
 	position: absolute;
 	top: 0;
 	height: 30px;
 	width: 100%;
 	justify-content: right;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.2);
 }
-form input, form a
-{
+.form input, .form__a {
 	margin: 0 5px 0 5px;
 }
-.form__btn, form a
-{
+.form__btn, .form__a {
 	font-size: 0.8em;
 	padding: 1px 4px 1px 4px;
 	border: 1px black solid;
 }
-.form__btn:hover, form a:hover
-{
+.form__btn:hover, .form__a:hover {
 	background-color: white;
 	cursor: pointer;
 }
-.form__checkbox
-{
+.form__checkbox {
 	position: absolute;
 	top: 30px;
 	color: white;
 	font-size: 0.8em;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.2);
 	padding: 1px 5px 2px 0;
 }
-/*/FORM*/
+
 /*LOGO*/
-.logo
-{
+.logo {
 	color: black;
 	background-image: url(images/fond_logo.png);
 	padding: 12px;
@@ -91,43 +87,37 @@ form input, form a
 	border-radius: 100%;
 	margin: 55px 0 25px 20px;
 }
-.logo img
-{
+.logo img {
 	width: 60px;
 	height: 60px;
 	margin: 0 10px 8px 0;
 }
-.logo h1
-{
+.logo h1 {
 	font-family: BallparkWeiner;
 	font-size: 1.3em;
 	font-weight: normal;
 	margin-top: 16px;
 }
-/*/LOGO*/
+
 /*NAV*/
-nav
-{
+nav {
 	position: absolute;
 	top: 155px;
 	right: 25px;
 	width: 28%;
 	font-size: 1.3em;
 }
-/*/NAV*/
+
 /*BANNER*/
-.banner__background
-{
+.banner__background {
 	position: relative;
 	height: 300px;
 	width: 75%;
 	max-width: 1000px;
 	background: url(images/iguanodon.png);
 	border-radius: 25px;
-	margin: 130px 0 130px 0;
 }
-.banner__description
-{
+.banner__description {
 	position: absolute;
 	right: 0;
 	height: 300px;
@@ -138,107 +128,44 @@ nav
 	border-left: 1px black solid;
 	border-radius: 0 25px 25px 0;
 }
-.banner__description a
-{
+.banner__description a { 					/*WHY NOT BY-PASSED ?*/
 	color: white;
 }
-.banner__description img
-{
+.banner__description img {
 	position: absolute;
 	bottom: 58px;
 	right: 45px;
 }
-/*/BANNER*/
-/*ACTU*/
-.actu
-{
-	height: 350px;
-	width: 100%;
+
+/*TABLE*/
+th, td {
+	padding: 8px 15px 8px 15px;
+	border-bottom: 1px dotted grey;
 }
-video
-{
-	width: 20%;
-	border: 2px solid black;
-}
-/*/ACTU*/
-#l2
-{
-	position: relative;
-	background-image: url(images/panorama.png);
-	background-position: 0 -175px;
-	height: 225px;
-	visibility: hidden;
-}
-table
-{
-	position: absolute;
-	right: 10px;
-	top: 47px;
-	border-collapse: collapse;
-	background-color: rgba(255, 255, 255, 0.5);
-}
-caption
-{
-	font-weight: bold;
-	background-color: rgba(255, 255, 255, 0.5);
-	border: 1px solid black;
-}
-td, th
-{
-	border: 1px solid black;
-	padding: 2px 5px 2px 5px;
-}
-table a:visited
-{
-	color: blue;
-}
-aside
-{
-	align-items: center;
-	height: 510px;
-	width: 15%;
-	visibility: hidden;
-}
-aside h2
-{
-	font-size: 0.75em;
-	text-align: center;
-}
-aside ul
-{
-	font-size: 0.65em;
-	margin-left: -24px;
-}
-aside ul li
-{
-	margin-bottom: 20px;
-}
-em
-{
-	font-weight: bold;
-}
-aside img
-{
-	border: 1px black solid;
+
+/*BIO*/
+.bio img {
+	height: 150px;
 	border-radius: 25px;
-	width: 80%;
-	margin-bottom: 15px;
+	margin: 0 -10px -22px 0;
 }
-footer
-{
+.bio ul {
+	font-size: 0.8em;
+	text-align: left;
+}
+.bio ul li {
+	padding-top: 21px;
+}
+
+/*FOOTER*/
+.footer {
 	justify-content: space-around;
+	margin-bottom: 0;
 }
 
-
-
-
-
-
-
-@media all and (max-width: 1255px)
-{
-	nav
-	{
+/*RESPONSIVE*/
+@media all and (max-width: 1255px) {
+	nav {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-end;
@@ -248,27 +175,22 @@ footer
 		background: none;
 		box-shadow: none;
 	}
-	nav a
-	{
+	nav a {
 		border-radius: 15px;
 		background-color: rgba(255, 255, 255, 0.5);
 		padding: 2px 7px 0 7px;
 	}
-	nav a:hover
-	{
+	nav a:hover {
 		text-decoration: none;
 		background-color: rgba(255, 255, 255, 1);
 	}
-	#banniere_fond
-	{
+	#banniere_fond {
 		width: 80%;
 	}
-	#bloc_video
-	{
+	#bloc_video {
 		justify-content: space-evenly;
 	}
-	video
-	{
+	video {
 		margin-bottom: 15px;
 	}
 }
