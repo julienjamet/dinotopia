@@ -41,13 +41,6 @@ a:hover, .form__btn:hover {
 	width: 100%;
 	justify-content: space-around;
 }
-ul {
-	font-size: 0.8em;
-	text-align: left;
-}
-ul li {
-	padding-top: 21px;
-}
 h4, caption {
 	caption-side: bottom;
 	font-weight: normal;
@@ -155,6 +148,13 @@ th, td {
 	height: 150px;
 	border-radius: 25px;
 	margin: 0 -10px -22px 0;
+}
+.bio ul {
+	font-size: 0.8em;
+	text-align: left;
+}
+.bio ul li {
+	padding-top: 21px;
 }
 
 /*FOOTER*/
