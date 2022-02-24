@@ -17,7 +17,7 @@ body {
 	background-color: rgb(233, 241, 205);
 	border-top: 1px dotted grey;
 	border-bottom: 1px dotted grey;
-	margin-bottom: 130px;
+	margin-bottom: 150px;
 }
 .flex {
 	display: flex;
@@ -41,7 +41,14 @@ a:hover, .form__btn:hover {
 	width: 100%;
 	justify-content: space-around;
 }
-caption, h4 {
+ul {
+	font-size: 0.8em;
+	text-align: left;
+}
+ul li {
+	padding-top: 21px;
+}
+h4, caption {
 	caption-side: bottom;
 	font-weight: normal;
 	font-style: italic;
@@ -149,48 +156,22 @@ th, td {
 	border-radius: 25px;
 	margin: 0 -10px -22px 0;
 }
-.bio ul {
-	font-size: 0.8em;
-	text-align: left;
-}
-.bio ul li {
-	padding-top: 21px;
-}
 
 /*FOOTER*/
 .footer {
 	justify-content: space-around;
+	align-items: flex-start;
+	padding-bottom: 15px;
 	margin-bottom: 0;
+}
+.footer__partners {
+	align-items: flex-start;
+}
+.footer__join {
+	align-items: flex-end;
 }
 
 /*RESPONSIVE*/
 @media all and (max-width: 1255px) {
-	nav {
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-end;
-		height: 100px;
-		border: none;
-		padding: 0;
-		background: none;
-		box-shadow: none;
-	}
-	nav a {
-		border-radius: 15px;
-		background-color: rgba(255, 255, 255, 0.5);
-		padding: 2px 7px 0 7px;
-	}
-	nav a:hover {
-		text-decoration: none;
-		background-color: rgba(255, 255, 255, 1);
-	}
-	#banniere_fond {
-		width: 80%;
-	}
-	#bloc_video {
-		justify-content: space-evenly;
-	}
-	video {
-		margin-bottom: 15px;
-	}
+	
 }
