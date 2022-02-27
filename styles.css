@@ -41,13 +41,6 @@ a:hover, .form__btn:hover {
 	width: 100%;
 	justify-content: space-around;
 }
-ul {
-	font-size: 0.8em;
-	text-align: left;
-}
-ul li {
-	padding-top: 21px;
-}
 h4, caption {
 	caption-side: bottom;
 	font-weight: normal;
@@ -107,11 +100,11 @@ h4, caption {
 }
 
 /*NAV*/
-nav {
+.nav {
 	position: absolute;
 	top: 155px;
 	right: 25px;
-	width: 28%;
+	min-width: 28%;
 	font-size: 1.3em;
 }
 
@@ -144,6 +137,11 @@ nav {
 	right: 45px;
 }
 
+/*ARTICLE*/
+.article p {
+	max-width: 80%;
+}
+
 /*TABLE*/
 th, td {
 	padding: 8px 15px 8px 15px;
@@ -155,6 +153,13 @@ th, td {
 	height: 150px;
 	border-radius: 25px;
 	margin: 0 -10px -22px 0;
+}
+.bio ul {
+	font-size: 0.8em;
+	text-align: left;
+}
+.bio ul li {
+	padding-top: 21px;
 }
 
 /*FOOTER*/
@@ -172,6 +177,73 @@ th, td {
 }
 
 /*RESPONSIVE*/
-@media all and (max-width: 1255px) {
-	
+@media all and (max-width: 440px) {
+	.nav {
+		top: 80px;
+		right: 5px;
+		height: 100px;
+		min-width: 15%;
+		flex-direction: column;
+		align-items: flex-end;		
+	}
+	.nav a {
+		color: red;
+	}
+	.banner__background {
+		background-position: -70px 0;
+	}
+	.article:nth-child(3) {
+		flex-direction: column;
+		height: 550px;
+	}
+	.bio {
+		align-self: flex-start;
+		margin-left: 20px;
+	}
+	table {
+		align-self: flex-end;
+		margin-right: 20px;
+	}
+	section {
+		background-color: red;
+	}
 }
+@media all and (max-width: 1000px) and (min-width: 441px) {
+	.nav {
+		top: 80px;
+		right: 5px;
+		height: 100px;
+		min-width: 15%;
+		flex-direction: column;
+		align-items: flex-end;		
+	}
+	.banner__background {
+		background-position: -70px 0;
+	}
+	.article:nth-child(3) {
+		flex-direction: column;
+		height: 550px;
+	}
+	.bio {
+		align-self: flex-start;
+		margin-left: 20px;
+	}
+	table {
+		align-self: flex-end;
+		margin-right: 20px;
+	}
+}
+@media all and (max-width: 1120px) and (min-width: 1001px) {
+	.nav {
+		top: 80px;
+		right: 5px;
+		height: 100px;
+		min-width: 15%;
+		flex-direction: column;
+		align-items: flex-end;		
+	}
+	.banner__background {
+		background-position: -40px 0;
+	}
+}
+

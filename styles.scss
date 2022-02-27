@@ -41,13 +41,6 @@ a, .form__btn {
 	width: 100%;
 	justify-content: space-around;
 }
-ul {
-	font-size: 0.8em;
-	text-align: left;
-	li {
-		padding-top: 21px;
-	}
-}
 h4, caption {
 	caption-side: bottom;
 	font-weight: normal;
@@ -144,6 +137,11 @@ nav {
 	}
 }
 
+/*ARTICLE*/
+.article p {
+	max-width: 80%;
+}
+
 /*TABLE*/
 th, td {
 	padding: 8px 20px 8px 20px;
@@ -155,6 +153,13 @@ th, td {
 	height: 150px;
 	border-radius: 25px;
 	margin: 0 -10px -22px 0;
+}
+.bio ul {
+	font-size: 0.8em;
+	text-align: left;
+	li {
+		padding-top: 21px;
+	}
 }
 
 /*FOOTER*/
@@ -172,33 +177,3 @@ th, td {
 }
 
 /*RESPONSIVE*/
-@media all and (max-width: 1255px) {
-	nav {
-		flex-direction: column;
-		justify-content: space-between;
-		align-items: flex-end;
-		height: 100px;
-		border: none;
-		padding: 0;
-		background: none;
-		box-shadow: none;
-	}
-	nav a {
-		border-radius: 15px;
-		background-color: rgba(255, 255, 255, 0.5);
-		padding: 2px 7px 0 7px;
-	}
-	nav a:hover {
-		text-decoration: none;
-		background-color: rgba(255, 255, 255, 1);
-	}
-	#banniere_fond {
-		width: 80%;
-	}
-	#bloc_video {
-		justify-content: space-evenly;
-	}
-	video {
-		margin-bottom: 15px;
-	}
-}
