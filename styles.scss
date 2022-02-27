@@ -177,3 +177,41 @@ th, td {
 }
 
 /*RESPONSIVE*/
+@media all and (max-width: 1000px) and (min-width: 441px) {
+	.nav {
+		top: 80px;
+		right: 5px;
+		height: 100px;
+		min-width: 15%;
+		flex-direction: column;
+		align-items: flex-end;		
+	}
+	.banner__background {
+		background-position: -70px 0;
+	}
+	.article:nth-child(3) {
+		flex-direction: column;
+		height: 550px;
+	}
+	.bio {
+		align-self: flex-start;
+		margin-left: 20px;
+	}
+	table {
+		align-self: flex-end;
+		margin-right: 20px;
+	}
+}
+@media all and (max-width: 1120px) and (min-width: 1001px) {
+	.nav {
+		top: 80px;
+		right: 5px;
+		height: 100px;
+		min-width: 15%;
+		flex-direction: column;
+		align-items: flex-end;		
+	}
+	.banner__background {
+		background-position: -40px 0;
+	}
+}
