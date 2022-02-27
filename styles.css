@@ -1,249 +1,383 @@
-/*GENERAL*/
-@font-face {
+@font-face
+{
     font-family: 'BallparkWeiner';
     src: url('polices/ballpark.eot');
     src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
-    	 url('polices/ballpark.woff') format('woff'),
-    	 url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
          url('polices/ballpark.svg#BallparkWeiner') format('svg');
 }
-body {
+body
+{
 	font-family: Arial, sans-serif;
-	color: grey;
-	text-align: center;
+	background-color:rgb(233, 241, 205);
 	margin: 0;
 }
-.bloc {
-	background-color: rgb(233, 241, 205);
-	border-top: 1px dotted grey;
-	border-bottom: 1px dotted grey;
-	margin-bottom: 150px;
-}
-.flex {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.flex--column {
-	flex-direction: column;
-	justify-content: space-around;
-}
-a, .form__btn {
-	color: grey;
-	text-decoration: none;
-}
-a:hover, .form__btn:hover {
-	color: black;
-	text-decoration: underline;
-}
-.article {
-	height: 350px;
-	width: 100%;
-	justify-content: space-around;
-}
-h4, caption {
-	caption-side: bottom;
-	font-weight: normal;
-	font-style: italic;
-	margin-top: 15px;
-}
-
-/*FORM*/
-.form {
-	position: absolute;
-	top: 0;
+form
+{
 	height: 30px;
-	width: 100%;
+	display: flex;
 	justify-content: right;
-	background-color: rgba(0, 0, 0, 0.2);
+	align-items: center;
+	padding-right: 15px;
+	background-color: rgba(0, 0, 0, 0.4);
 }
-.form input, .form__a {
-	margin: 0 5px 0 5px;
-}
-.form__btn, .form__a {
-	font-size: 0.8em;
+#log
+{
+	margin: 0 10px 0 10px;
+	background-color: rgb(200, 209, 166);
 	padding: 1px 4px 1px 4px;
 	border: 1px black solid;
 }
-.form__btn:hover, .form__a:hover {
+#log:hover, #subscribe:hover
+{
 	background-color: white;
-	cursor: pointer;
+	text-decoration: underline;
 }
-.form__checkbox {
-	position: absolute;
-	top: 30px;
-	color: white;
-	font-size: 0.8em;
-	background-color: rgba(0, 0, 0, 0.2);
-	padding: 1px 5px 2px 0;
-}
-
-/*LOGO*/
-.logo {
+#subscribe
+{
+	background-color: rgb(200, 209, 166);
+	padding: 1px 4px 1px 4px;
+	border: 1px black solid;
 	color: black;
-	background-image: url(images/fond_logo.png);
-	padding: 12px;
-	border: 6px black double;
-	border-radius: 100%;
-	margin: 55px 0 25px 20px;
+	text-decoration: none;
+	font-size: 0.8em;
 }
-.logo img {
+#check
+{
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+#checkbox_background
+{
+	background-color: rgba(0, 0, 0, 0.4);
+}
+label
+{
+	font-size: 0.8em;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 3px 4px 2px 3px;
+}
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 15px 15px 35px 15px;
+	border-bottom: 1px grey solid;
+}
+#logo
+{
+	display: flex;
+	border: 6px black double;
+	border-radius: 80%;
+	padding: 12px;
+	background-image: url(images/fond_logo.png);
+}
+#logo img
+{
 	width: 60px;
 	height: 60px;
-	margin: 0 10px 8px 0;
+	margin-bottom: 8px;
 }
-.logo h1 {
+#logo h1
+{
 	font-family: BallparkWeiner;
 	font-size: 1.3em;
 	font-weight: normal;
-	margin-top: 16px;
+	margin: 24px 0 0 7px;
 }
-
-/*NAV*/
-.nav {
-	position: absolute;
-	top: 155px;
-	right: 25px;
-	min-width: 28%;
-	font-size: 1.3em;
+nav
+{
+	display: flex;
+	justify-content: space-around;
+	width: 32%;
+	border: 1px grey solid;
+	border-radius: 25px;
+	padding-top: 2px;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: 1px 1px 1px grey inset;
+	margin-bottom: -15px;
 }
-
-/*BANNER*/
-.banner__background {
+nav a
+{
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover
+{
+	text-decoration: underline;
+}
+section
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 100px 0 100px 0;
+}
+#banniere_fond
+{
 	position: relative;
 	height: 300px;
-	width: 75%;
-	max-width: 1000px;
+	width: 1010px;
+	border: 1px grey solid;
+	border-radius: 30px;
 	background: url(images/iguanodon.png);
-	border-radius: 25px;
+	box-shadow: 1px 1px 1px grey;
+	margin-bottom: 80px;
 }
-.banner__description {
+#banniere_description
+{
 	position: absolute;
 	right: 0;
 	height: 300px;
-	width: 220px;
-	color: white;
-	font-size: 1.2em;
-	background-color: rgba(255, 255, 255, 0.3);
-	border-left: 1px black solid;
-	border-radius: 0 25px 25px 0;
-}
-.banner__description a { 					/*WHY NOT BY-PASSED ?*/
-	color: white;
-}
-.banner__description img {
-	position: absolute;
-	bottom: 58px;
-	right: 45px;
-}
-
-/*ARTICLE*/
-.article p {
-	max-width: 80%;
-}
-
-/*TABLE*/
-th, td {
-	padding: 8px 15px 8px 15px;
-	border-bottom: 1px dotted grey;
-}
-
-/*BIO*/
-.bio img {
-	height: 150px;
-	border-radius: 25px;
-	margin: 0 -10px -22px 0;
-}
-.bio ul {
-	font-size: 0.8em;
-	text-align: left;
-}
-.bio ul li {
-	padding-top: 21px;
-}
-
-/*FOOTER*/
-.footer {
+	width: 170px;
+	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
-	align-items: flex-start;
-	padding-bottom: 15px;
-	margin-bottom: 0;
+	font-size: 1.2em;
+	color: white;
+	text-align: center;
+	border-left: 1px black solid;
+	border-radius: 0 30px 30px 0;
+	background-color: rgba(255, 255, 255, 0.3);
 }
-.footer__partners {
-	align-items: flex-start;
+#banniere_description a
+{
+	color: white;
+	text-decoration: none;
 }
-.footer__join {
-	align-items: flex-end;
+#banniere_description a:hover
+{
+	text-decoration: underline;
 }
-
-/*RESPONSIVE*/
-@media all and (max-width: 440px) {
-	.nav {
-		top: 80px;
-		right: 5px;
+#banniere_description img
+{
+	position: absolute;
+	bottom: 52px;
+	right: 20px;
+}
+#sous_section
+{
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+}
+#main
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 80%;
+	height: 513px;
+}
+#l1
+{
+	display: flex;
+	justify-content: space-between;
+}
+#a1
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 60%;
+	height: 255px;
+	border: 1px grey solid;
+	border-radius: 25px;
+	background-image: url(images/jungle.png);
+	background-position: -8px -10px;
+	box-shadow: 1px 1px 1px grey;
+}
+#a1 h2
+{
+	font-size: 1.3em;
+	margin-top: -3px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 25px;
+	padding: 2px;
+}
+#a1 p
+{
+	width: 150px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 25px;
+}
+video
+{
+	width: 100%;
+}
+#bloc_video
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 35%;
+	font-size: 0.8em;
+	text-align: center;	
+	font-weight: bold;
+	padding: 25px 5px 8px 5px;
+	border: 1px grey solid;
+	border-radius: 25px;
+	box-shadow: 1px 1px 1px grey;
+	background-color: rgb(200, 209, 166);
+}
+#l2
+{
+	position: relative;
+	background-image: url(images/panorama.png);
+	background-position: 0 -175px;
+	height: 225px;
+	border: 1px grey solid;
+	border-radius: 25px;
+	box-shadow: 1px 1px 1px grey;
+}
+table
+{
+	position: absolute;
+	right: 10px;
+	top: 47px;
+	border-collapse: collapse;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+caption
+{
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid black;
+}
+td, th
+{
+	border: 1px solid black;
+	padding: 2px 5px 2px 5px;
+}
+table a
+{
+	text-decoration: none;
+}
+table a:hover
+{
+	text-decoration: underline;
+}
+table a:visited
+{
+	color: blue;
+}
+aside
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 510px;
+	width: 15%;
+	border: 1px grey solid;
+	border-radius: 25px;
+	background-color: rgb(200, 209, 166);
+	box-shadow: 1px 1px 1px grey;
+}
+aside h2
+{
+	font-size: 0.75em;
+	text-align: center;
+}
+aside ul
+{
+	font-size: 0.65em;
+	margin-left: -24px;
+}
+aside ul li
+{
+	margin-bottom: 20px;
+}
+em
+{
+	font-weight: bold;
+}
+aside img
+{
+	border: 1px black solid;
+	border-radius: 25px;
+	width: 80%;
+	margin-bottom: 15px;
+}
+footer
+{
+	display: flex;
+	justify-content: space-around;
+	border-top: 1px grey solid;
+	background-color: rgb(200, 209, 166)
+}
+footer h1
+{
+	font-size: 1em;
+	text-align: center;
+}
+footer ul
+{
+	margin-left: -40px;
+}
+footer li
+{
+	margin-bottom: 5px;
+}
+footer a
+{
+	color: black;
+	text-decoration: none;
+}
+footer a:hover
+{
+	text-decoration: underline;
+}
+footer p
+{
+	display: flex;
+	justify-content: space-around;
+	margin: 25px 0 0 2px;
+}
+@media all and (max-width: 1255px)
+{
+	nav
+	{
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
 		height: 100px;
-		min-width: 15%;
-		flex-direction: column;
-		align-items: flex-end;		
+		border: none;
+		padding: 0;
+		background: none;
+		box-shadow: none;
 	}
-	.nav a {
-		color: red;
+	nav a
+	{
+		border-radius: 15px;
+		background-color: rgba(255, 255, 255, 0.5);
+		padding: 2px 7px 0 7px;
 	}
-	.banner__background {
-		background-position: -70px 0;
+	nav a:hover
+	{
+		text-decoration: none;
+		background-color: rgba(255, 255, 255, 1);
 	}
-	.article:nth-child(3) {
-		flex-direction: column;
-		height: 550px;
+	#banniere_fond
+	{
+		width: 80%;
 	}
-	.bio {
-		align-self: flex-start;
-		margin-left: 20px;
+	#bloc_video
+	{
+		justify-content: space-evenly;
 	}
-	table {
-		align-self: flex-end;
-		margin-right: 20px;
-	}
-	section {
-		background-color: red;
-	}
-}
-@media all and (max-width: 1000px) and (min-width: 441px) {
-	.nav {
-		top: 80px;
-		right: 5px;
-		height: 100px;
-		min-width: 15%;
-		flex-direction: column;
-		align-items: flex-end;		
-	}
-	.banner__background {
-		background-position: -70px 0;
-	}
-	.article:nth-child(3) {
-		flex-direction: column;
-		height: 550px;
-	}
-	.bio {
-		align-self: flex-start;
-		margin-left: 20px;
-	}
-	table {
-		align-self: flex-end;
-		margin-right: 20px;
+	video
+	{
+		margin-bottom: 15px;
 	}
 }
-@media all and (max-width: 1120px) and (min-width: 1001px) {
-	.nav {
-		top: 80px;
-		right: 5px;
-		height: 100px;
-		min-width: 15%;
-		flex-direction: column;
-		align-items: flex-end;		
-	}
-	.banner__background {
-		background-position: -40px 0;
-	}
-}
-

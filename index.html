@@ -1,144 +1,132 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<title>Page d'accueil</title>		
+			<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="styles.css">
+			<title>Page d'accueil</title>		
 	</head>
 
 	<body>
-		<header class="bloc flex">
-<!--FORM-->
-			<form class="flex form" method="post" action="traitement.php">
-				<p>
-					<input type="email" placeholder="Adresse e-mail" name="pseudo" required />
-					<input type="password" placeholder="Mot de passe" name="pseudo" required />
-					<input class="bloc form__btn" type="submit" value="Connexion" />
-					<a class="bloc form__a" href="#" title="Inscrivez-vous pour bénéficier de nombreux avantages !">Inscription</a>
-					<div class="flex form__checkbox">
-						<input id="form__checkbox" type="checkbox" name="rester connecté" />
-						<label for="form__checkbox">Rester connecté</label>
-					</div>
-				</p>
-			</form>
+		<form method="post" action="traitement.php">
+			<p>
+				<input type="email" placeholder="Adresse e-mail" name="pseudo" required />
+				<input type="password" placeholder="Mot de passe" name="pseudo" required />
+				<input id="log" type="submit" value="Connexion" />
+				<a id="subscribe" href="#" title="Inscrivez-vous pour bénéficier de nombreux avantages !">Inscription</a>
+			</p>
+		</form>
+		<div id="check">
+			<div id="checkbox_background"><input id="checkbox" type="checkbox" name="rester connecté" /></div>
+			<label for="checkbox">Rester connecté</label>
+		</div>
 
-<!--LOGO-->
-			<div class="flex logo">
+		<header>	
+			<div id="logo">
 				<img src="images/oeil.png" alt="oeil_dino" />
 				<h1>Dinotopia</h1>
 			</div>
-
-<!--NAV-->
-			<nav class="flex nav">
+			<nav>
 				<a href="#">Accueil</a>
 				<a href="#">Infos pratiques</a>
 				<a href="#">Billeterie</a>
 			</nav>
 		</header>
 
-		<section class="flex flex--column">
-<!--BANNER-->
-			<div class="bloc banner__background">
-				<div class="flex flex--column banner__description">
-					Naissance des Iguanodons : le monde entier en émoi
-					<a href="#">Lire l'article</a>
-					<img src="images/flecheblanchedroite.png" alt="" />
+		<section>
+			<div id="banniere_fond">
+				<div id="banniere_description">
+				Naissance des Iguanodons : le monde entier en émoi
+				<a href="#">Lire l'article <img src="images/flecheblanchedroite.png" alt="" /></a>
 				</div>
 			</div>
 
-<!--ARTICLE 1-->
-			<article class="bloc flex flex--column article">
-				<h1>Le parc rouvre ses portes !</h1>
-				<p>Après une fermeture de deux ans en raison de la pandémie de COVID-19,
-				nous sommes ravis de vous accueillir de nouveau dès le 10 mars 2022 !</p>
-				<video src="images/video.mp4" width="20%" controls></video>
-				Venez vous promener avec les Diplodocus !
-			</article>
-
-<!--ARTICLE 2-->
-			<article class="bloc flex article">
-<!--BIO-->		
-				<div class="bio">
-					<div class="flex">
-						<img src="images/howard.jpg" title="Howard Hughes" alt="Howard Hughes" />
-						<ul>
-							<li><strong>21 juin 1936</strong> : naissance à Londres</li>
-							<li><strong>1954-1961</strong> : études d'archéologie à la Sorbonne</li>
-							<li><strong>17 juillet 1968</strong> : découverte du Spinosaurus au Maroc</li>
-							<li><strong>8 octobre 1976</strong> : création du parc Dinotopia</li>
-							<li><strong>17 mars 2014</strong> : décès à Paris</li>
-						</ul>
+			<div id="sous_section">
+				<div id="main">
+					<div id="l1">
+						<div id="a1">
+							<h2>Le parc rouvre ses portes !</h2>
+							<p>Après une fermeture de deux ans en raison de la pandémie de COVID-19, nous sommes ravis de vous accueillir de nouveau dès le 10 janvier !</p>
+						</div>
+						<div id="bloc_video">
+							<video src="images/video.mp4" controls></video>
+							Venez vous promener avec les Diplodocus !
+						</div>
 					</div>
-					<h4>Biographie d'Howard Hughes, fondateur du parc</h4>
+
+					<div id="l2">
+						<table>
+							<caption>Quelques espèces du parc</caption>
+							<thead>
+								<tr>
+									<th>Espèce</th>
+									<th>Nombre</th>
+									<th>Poids moyen</th>
+									<th>Régime</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><a href="https://fr.wikipedia.org/wiki/Compsognathus">Compsognathus</a></td>
+									<td>66</td>
+									<td>2 kg</td>
+									<td>Carnivore</td>
+								</tr>
+								<tr>
+									<td><a href="https://fr.wikipedia.org/wiki/Ankylosaurus">Ankylosaurus</a></td>
+									<td>13</td>
+									<td>3000 kg</td>
+									<td rowspan="2">Herbivore</td>
+								</tr>
+								<tr>
+									<td><a href="https://fr.wikipedia.org/wiki/Brachiosaurus">Brachiosaurus</a></td>
+									<td>2</td>
+									<td>40 000 kg</td>
+								</tr>
+								<tr>
+									<td><a href="https://fr.wikipedia.org/wiki/Rhamphorhynchus">Rhamphorhynchus</a></td>
+									<td>84</td>
+									<td>15 kg</td>
+									<td>Piscivore</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				
-<!--TABLE-->
-				<table>
-					<caption>Quelques espèces du parc</caption>
-					<thead>
-						<tr>
-							<th>Espèce</th>
-							<th>Nombre</th>
-							<th>Poids moyen</th>
-							<th>Régime</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="https://fr.wikipedia.org/wiki/Compsognathus">Compsognathus</a></td>
-							<td>66</td>
-							<td>2 kg</td>
-							<td>Carnivore</td>
-						</tr>
-						<tr>
-							<td><a href="https://fr.wikipedia.org/wiki/Ankylosaurus">Ankylosaurus</a></td>
-							<td>13</td>
-							<td>3000 kg</td>
-							<td rowspan="2">Herbivore</td>
-						</tr>
-						<tr>
-							<td><a href="https://fr.wikipedia.org/wiki/Brachiosaurus">Brachiosaurus</a></td>
-							<td>2</td>
-							<td>40 000 kg</td>
-							</tr>
-						<tr>
-							<td><a href="https://fr.wikipedia.org/wiki/Rhamphorhynchus">Rhamphorhynchus</a></td>
-							<td>84</td>
-							<td>15 kg</td>
-							<td>Piscivore</td>
-						</tr>
-					</tbody>
-				</table>
-			</article>
+
+				<aside>
+					<h2>Biographie d'Howard Hughes, fondateur du parc</h2>
+					<ul>
+						<li><em>21 juin 1936</em> : naissance à Londres</li>
+						<li><em>1954-1961</em> : études d'archéologie à la Sorbonne</li>
+						<li><em>17 juillet 1968</em> : découverte du Spinosaurus au Maroc</li>
+						<li><em>8 octobre 1976</em> : création du parc Dinotopia</li>
+						<li><em>17 mars 2004</em> : décès à Paris</li>
+					</ul>
+					<img src="images/howard.jpg" title="Howard Hughes" alt="Howard Hughes" />
+				</aside>
+			</div>
 		</section>
-		
-		<footer class="bloc flex footer">
-<!--PARTNERS-->
-			<div class="flex flex--column footer__partners">
-				<h3>Nos partenaires</h3>
-				<a href="#">Massive Dynamic</a>
-				<a href="#">Tyrannasso</a>
-				<a href="#">Royaume du Kilimandjaro</a>
+			
+		<footer>
+			<div id="partenaires">
+				<h1>Nos partenaires</h1>
+				<ul>
+					<li><a href="#">Massive Dynamic</a></li>
+					<li><a href="#">Tyrannasso</a></li>
+					<li><a href="#">Royaume du Kilimandjaro</a></li>
+				</ul>
 			</div>
-
-<!--NETWORKS-->
-			<div>
-				<h3>Suivez-nous sur les réseaux sociaux</h3>
-				<div class="flex">
-					<img src="images/facebook.png" alt="Facebook" />
-					<img src="images/twitter.png" alt="Twitter" />
-					<img src="images/vimeo.png" alt="Vimeo" />
-					<img src="images/flickr.png" alt="Flickr" />
-					<img src="images/rss.png" alt="RSS" />
-				</div>
+			<div id="reseaux">
+				<h1>Suivez-nous sur les réseaux sociaux</h1>
+				<p><img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" /><img src="images/vimeo.png" alt="Vimeo" /><img src="images/flickr.png" alt="Flickr" /><img src="images/rss.png" alt="RSS" /></p>
 			</div>
-
-<!--JOIN-->
-			<div class="flex flex--column footer__join">
-				<h3>Rejoignez-nous</h3>
-				<a href="#">Nos offres d'emploi</a>
-				<a href="#">La vie dans le parc</a>
-				<a href="#">Témoignages</a>
+			<div id="recrutement">
+				<h1>Rejoignez-nous</h1>
+				<ul>
+					<li><a href="#">Nos offres d'emploi</a></li>
+					<li><a href="#">La vie dans le parc</a></li>
+					<li><a href="#">Témoignages</a></li>
+				</ul>
 			</div>
 		</footer>
 	</body>
