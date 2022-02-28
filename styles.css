@@ -177,7 +177,7 @@ th, td {
 }
 
 /*RESPONSIVE*/
-@media all and (max-width: 440px) {
+@media all and (max-device-width: 440px) {
 	.nav {
 		top: 80px;
 		right: 5px;
@@ -187,7 +187,7 @@ th, td {
 		align-items: flex-end;		
 	}
 	.nav a {
-		color: orange;
+		color: red;
 	}
 	.banner__background {
 		background-position: -70px 0;
@@ -203,9 +203,6 @@ th, td {
 	table {
 		align-self: flex-end;
 		margin-right: 20px;
-	}
-	section {
-		background-color: red;
 	}
 }
 @media all and (max-width: 1000px) and (min-width: 441px) {
