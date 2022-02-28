@@ -180,10 +180,10 @@ th, td {
 @media all and (max-device-width: 440px) {
 	body {
 		font-size: 3em;
-		background-color: rgb(204, 203, 201);
 	}
 	header {
 		height: 400px;
+		width: 100%;
 	}
 	.form {
 		display: none;
@@ -214,14 +214,13 @@ th, td {
 		height: 100px;
 		bottom: -130px;
 		color: grey;
-		background-color: rgb(204, 203, 201);
 	}
 	.banner__description a {
 		display: none;
 	}
 	.article {
 		height: 700px;
-		padding: 50px;
+		padding: 50px 0 50px 0;
 		margin: 130px 0 250px 0;
 	}
 	.article video {
