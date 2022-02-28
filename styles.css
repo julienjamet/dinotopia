@@ -182,6 +182,9 @@ th, td {
 		font-size: 3em;
 		background-color: rgb(204, 203, 201);
 	}
+	header {
+		height: 400px;
+	}
 	.form {
 		display: none;
 	}
@@ -197,11 +200,11 @@ th, td {
 		margin-top: 50px;
 	}
 	.nav {
-		margin: -32px 10px 0 0;
+		margin-right: 10px;
 		font-size: 1.2em;
 	}
 	.nav a {
-		padding-bottom: 15px;		
+		padding-bottom: 30px;		
 	}
 	.banner__background {
 		background-position: -70px 0;
@@ -217,26 +220,46 @@ th, td {
 		display: none;
 	}
 	.article {
-		height: 750px;
+		height: 700px;
 		padding: 50px;
-		margin: 130px 0 280px 0;
+		margin: 130px 0 250px 0;
 	}
 	.article video {
 		visibility: hidden;
 	}
-	.article:nth-child(3) {
+	#article {
 		flex-direction: column;
-		background-color: red;
-		height: 1000px;
-		margin-bottom: 500px;
+		height: 1700px;
+		padding: 50px 0 50px 0;
+		margin-bottom: 400px;
 	}
 	.bio {
-		align-self: flex-start;
-		margin-left: 20px;
+		font-size: 0.9em;
+	}
+	.bio div {
+		flex-direction: column;
+	}
+	.bio img {
+		height: 400px;
+		margin-bottom: 50px;
 	}
 	table {
-		align-self: flex-end;
-		margin-right: 20px;
+		font-size: 0.8em;
+	}
+	table caption {
+		font-size: 1.2em;
+	}
+	.footer {
+		font-size: 0.7em;
+	}
+	.footer__partners {
+		text-align: left;
+	}
+	.footer__networks {
+		padding: 0 80px 0 80px;
+	}
+	.footer__join {
+		text-align: right;
 	}
 }
 @media all and (max-width: 1000px) and (min-width: 441px) {
