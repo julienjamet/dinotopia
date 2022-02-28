@@ -178,23 +178,57 @@ th, td {
 
 /*RESPONSIVE*/
 @media all and (max-device-width: 440px) {
-	.nav {
-		top: 80px;
-		right: 5px;
+	body {
+		font-size: 3em;
+		background-color: rgb(204, 203, 201);
+	}
+	.form {
+		display: none;
+	}
+	.logo {
+		padding: 20px;
+		margin-bottom: 60px;
+	}
+	.logo img {
 		height: 100px;
-		min-width: 15%;
-		flex-direction: column;
-		align-items: flex-end;		
+		width: 100px;
+	}
+	.logo h1 {	
+		margin-top: 50px;
+	}
+	.nav {
+		margin: -32px 10px 0 0;
+		font-size: 1.2em;
 	}
 	.nav a {
-		color: red;
+		padding-bottom: 15px;		
 	}
 	.banner__background {
 		background-position: -70px 0;
 	}
+	.banner__description {
+		width: 100%;
+		height: 100px;
+		bottom: -130px;
+		color: grey;
+		background-color: rgb(204, 203, 201);
+	}
+	.banner__description a {
+		display: none;
+	}
+	.article {
+		height: 750px;
+		padding: 50px;
+		margin: 130px 0 280px 0;
+	}
+	.article video {
+		visibility: hidden;
+	}
 	.article:nth-child(3) {
 		flex-direction: column;
-		height: 550px;
+		background-color: red;
+		height: 1000px;
+		margin-bottom: 500px;
 	}
 	.bio {
 		align-self: flex-start;
