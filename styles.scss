@@ -177,6 +177,101 @@ th, td {
 }
 
 /*RESPONSIVE*/
+@media all and (max-device-width: 440px) {
+	body {
+		font-size: 3em;
+	}
+	header {
+		height: 400px;
+	}
+	.form {
+		display: none;
+	}
+	.logo {
+		padding: 20px;
+		margin-bottom: 60px;
+	}
+	.logo img {
+		height: 100px;
+		width: 100px;
+	}
+	.logo h1 {	
+		margin-top: 50px;
+	}
+	.nav {
+		margin: -10px 10px 0 0;
+		font-size: 1.2em;
+	}
+	.nav a {
+		padding-bottom: 30px;		
+	}
+	.banner__description {
+		width: 100%;
+		height: 100px;
+		bottom: -130px;
+		color: grey;
+		text-decoration: underline;
+		border: none;
+	}
+	.banner__description a {
+		display: none;
+	}
+	.article {
+		height: 700px;
+		padding: 50px 0 100px 0;
+		margin: 130px 0 50px 0;
+	}
+	.article video {
+		visibility: hidden;
+	}
+	#article {
+		height: 1700px;
+		padding-bottom: 0;
+		margin: 50px 0 50px 0;
+	}
+	.bio {
+		font-size: 0.9em;
+	}
+	.bio div {
+		flex-direction: column;
+	}
+	.bio img {
+		height: 400px;
+		margin-bottom: 50px;
+	}
+	table {
+		font-size: 0.8em;
+		margin-top: -150px;
+	}
+	table a {
+		text-decoration: underline;
+	}
+	table caption {
+		font-size: 1.2em;
+	}
+	.footer {
+		font-size: 0.6em;
+		padding: 0 10px 0 10px;
+		margin-top: 50px;
+	}
+	.footer h3 {
+		height: 80px;
+		max-width: 90%;
+		font-size: 1em;
+	}
+	.footer__partners {
+		text-align: left;
+	}
+	.footer__networks {
+		padding: 0 80px 0 80px;
+	}
+	.footer__networks {
+		padding-top: 30px;
+	}
+	.footer__join {
+		text-align: right;
+	}
+}
 @media all and (max-width: 1000px) and (min-width: 441px) {
 	.nav {
 		top: 80px;
@@ -192,14 +287,6 @@ th, td {
 	.article:nth-child(3) {
 		flex-direction: column;
 		height: 550px;
-	}
-	.bio {
-		align-self: flex-start;
-		margin-left: 20px;
-	}
-	table {
-		align-self: flex-end;
-		margin-right: 20px;
 	}
 }
 @media all and (max-width: 1120px) and (min-width: 1001px) {
