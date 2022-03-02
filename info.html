@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>Page d'accueil</title>		
+	</head>
+
+	<body>
+		<header class="bloc flex">
+<!--FORM-->
+			<form class="flex form" method="post" action="traitement.php">
+				<p>
+					<input type="email" placeholder="Adresse e-mail" name="pseudo" required />
+					<input type="password" placeholder="Mot de passe" name="pseudo" required />
+					<input class="bloc form__btn" type="submit" value="Connexion" />
+					<a class="bloc form__a" href="#" title="Inscrivez-vous pour bénéficier de nombreux avantages !">Inscription</a>
+					<div class="flex form__checkbox">
+						<input id="form__checkbox" type="checkbox" name="rester connecté" />
+						<label for="form__checkbox">Rester connecté</label>
+					</div>
+				</p>
+			</form>
+
+<!--LOGO-->
+			<div class="flex logo">
+				<img src="images/oeil.png" alt="oeil_dino" />
+				<h1>Dinotopia</h1>
+			</div>
+
+<!--NAV-->
+			<nav class="flex nav">
+				<a href="index.html">Accueil</a>
+				<a href="info.html">Infos pratiques</a>
+				<a href="tickets.html">Billeterie</a>
+			</nav>
+		</header>
+
+		<section class="flex flex--column">
+			<h1>INFOS PRATIQUES</h1>
+            <h1>INFOS PRATIQUES</h1>
+            <h1>INFOS PRATIQUES</h1>
+            <h1>INFOS PRATIQUES</h1>
+            <h1>INFOS PRATIQUES</h1>
+            <h1>INFOS PRATIQUES</h1>
+            <h1>INFOS PRATIQUES</h1>	
+            <h1>INFOS PRATIQUES</h1>
+		</section>
+		
+		<footer class="bloc flex footer">
+<!--PARTNERS-->
+			<div class="flex flex--column footer__partners">
+				<h3>Nos partenaires</h3>
+				<a href="#">Massive Dynamic</a>
+				<a href="#">Tyrannasso</a>
+				<a href="#">Royaume du Kilimandjaro</a>
+			</div>
+
+<!--NETWORKS-->
+			<div>
+				<h3>Suivez-nous sur les réseaux sociaux</h3>
+				<div class="flex footer__networks">
+					<img src="images/facebook.png" alt="Facebook" />
+					<img src="images/twitter.png" alt="Twitter" />
+					<img src="images/vimeo.png" alt="Vimeo" />
+					<img src="images/flickr.png" alt="Flickr" />
+					<img src="images/rss.png" alt="RSS" />
+				</div>
+			</div>
+
+<!--JOIN-->
+			<div class="flex flex--column footer__join">
+				<h3>Rejoignez-nous</h3>
+				<a href="#">Nos offres d'emploi</a>
+				<a href="#">La vie dans le parc</a>
+				<a href="#">Témoignages</a>
+			</div>
+		</footer>
+	</body>
+</html>
