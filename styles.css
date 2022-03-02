@@ -163,7 +163,7 @@ th, td {
 }
 
 /*FOOTER*/
-.footer {
+.footer {	
 	justify-content: space-around;
 	align-items: flex-start;
 	padding-bottom: 15px;
@@ -171,6 +171,9 @@ th, td {
 }
 .footer__partners {
 	align-items: flex-start;
+}
+.footer img {
+	margin: 0 10px 0 10px;
 }
 .footer__join {
 	align-items: flex-end;
@@ -180,6 +183,9 @@ th, td {
 @media all and (max-device-width: 440px) {
 	body {
 		font-size: 3em;
+	}
+	a {
+		text-decoration: underline;
 	}
 	header {
 		height: 400px;
@@ -203,29 +209,32 @@ th, td {
 		font-size: 1.2em;
 	}
 	.nav a {
+		text-decoration: none;
 		padding-bottom: 30px;		
 	}
 	.banner__description {
 		width: 100%;
 		height: 100px;
-		bottom: -130px;
+		bottom: -160px;
 		color: grey;
 		border: none;
 	}
 	.banner__description a {
-		display: none;
+		font-size: 0.9em;
+		color: grey;
+		margin-top: 20px;
 	}
 	.article {
 		height: 700px;
 		padding: 50px 0 100px 0;
-		margin: 130px 0 50px 0;
+		margin: 180px 0 50px 0;
 	}
 	.article video {
 		visibility: hidden;
 	}
 	#article {
 		height: 1700px;
-		padding-bottom: 0;
+		padding: 0;
 		margin: 50px 0 50px 0;
 	}
 	.bio {
@@ -242,33 +251,33 @@ th, td {
 		font-size: 0.8em;
 		margin-top: -150px;
 	}
-	table a {
-		text-decoration: underline;
-	}
 	table caption {
 		font-size: 1.2em;
+		margin-top: 50px;
 	}
 	.footer {
 		font-size: 0.6em;
-		padding: 0 10px 0 10px;
 		margin-top: 50px;
 	}
 	.footer h3 {
-		height: 80px;
-		max-width: 90%;
 		font-size: 1em;
+	}
+	.footer a {
+		padding-bottom: 20px;
 	}
 	.footer__partners {
 		text-align: left;
+		margin: 0 -30px 0 10px;
 	}
-	.footer__networks {
-		padding: 0 80px 0 80px;
+	.footer__partners h3 {
+		margin-bottom: 50px;
 	}
-	.footer__networks {
-		padding-top: 30px;
+	.footer img {
+		margin-top: 40px;
 	}
 	.footer__join {
 		text-align: right;
+		margin-right: 10px;
 	}
 }
 @media all and (max-width: 1000px) and (min-width: 441px) {
