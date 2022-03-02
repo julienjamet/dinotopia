@@ -93,9 +93,13 @@ h4, caption {
 	}
 	h1 {
 		font-family: BallparkWeiner;
+		color: black;
 		font-size: 1.3em;
 		font-weight: normal;
 		margin-top: 16px;
+	}
+	a:hover {
+		text-decoration: none;
 	}
 }
 
@@ -203,6 +207,9 @@ th, td {
 		h1 {	
 			margin-top: 50px;
 		}
+		a {
+			text-decoration: none;
+		}
 	}
 	.nav {
 		margin: -10px 10px 0 0;
@@ -249,6 +256,8 @@ th, td {
 	}
 	table {
 		font-size: 0.8em;
+		border-top: 5px solid white;
+		padding-top: 80px;
 		margin-top: -150px;
 		caption {
 			font-size: 1.2em;
