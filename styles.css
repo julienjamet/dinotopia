@@ -249,7 +249,7 @@ nav {
   }
   #article .bio {
     font-size: 0.9em;
-    margin-left: -5px;
+    margin-left: -10px;
   }
   #article .bio div {
     flex-direction: column;
@@ -261,7 +261,7 @@ nav {
   #article table {
     font-size: 0.8em;
     border-top: 5px solid white;
-    padding-top: 70px;
+    padding-top: 75px;
     margin-top: -130px;
   }
   #article table caption {
