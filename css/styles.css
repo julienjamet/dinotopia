@@ -1,7 +1,7 @@
 @font-face {
   font-family: "BallparkWeiner";
-  src: url("polices/ballpark.eot");
-  src: url("polices/ballpark.eot?#iefix") format("embedded-opentype"), url("polices/ballpark.woff") format("woff"), url("polices/ballpark.ttf") format("truetype"), url("polices/ballpark.svg#BallparkWeiner") format("svg");
+  src: url("../polices/ballpark.eot");
+  src: url("../polices/ballpark.eot?#iefix") format("embedded-opentype"), url("../polices/ballpark.woff") format("woff"), url("../polices/ballpark.ttf") format("truetype"), url("../polices/ballpark.svg#BallparkWeiner") format("svg");
 }
 body {
   font-family: Arial, sans-serif;
@@ -74,7 +74,7 @@ h4, caption {
 
 .logo {
   color: black;
-  background-image: url(images/fond_logo.png);
+  background-image: url(../images/fond_logo.png);
   padding: 12px;
   border: 6px black double;
   border-radius: 100%;
@@ -109,7 +109,7 @@ nav {
   height: 300px;
   width: 75%;
   max-width: 1000px;
-  background: url(images/iguanodon.png);
+  background: url(../images/iguanodon.png);
   border-radius: 25px;
 }
 
